@@ -27,8 +27,13 @@ namespace MovieCatalogPomTests.Tests
             var chromeOptions = new ChromeOptions();
             chromeOptions.AddUserProfilePreference("profile.password_manager_enabled", false);
             chromeOptions.AddArgument("--disable-search-engine-choice-screen");
+		chromeOptions.AddArgument("--headless"); 
+		chromeOptions.AddArgument("--no-sandbox"); 
+		chromeOptions.AddArgument("--disable-dev-shm-usage"); 
+		chromeOptions.AddArgument("--disable-gpu"); 
 
             driver = new ChromeDriver(chromeOptions);
+		
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
 
