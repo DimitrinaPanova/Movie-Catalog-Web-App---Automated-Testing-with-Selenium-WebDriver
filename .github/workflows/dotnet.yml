@@ -18,6 +18,10 @@ jobs:
       with:
         dotnet-version: 6.0
 
+    - name: Test
+      run: dotnet test --no-build --verbosity detailed
+
+
     - name: Install Chrome
       run: sudo apt-get install -y google-chrome-stable
 
