@@ -87,7 +87,7 @@ ChromeDriver
 
 **1. Clone the repository:**
 
-git clone 
+git clone   https://github.com/DimitrinaPanova/Movie-Catalog-Web-App---Automated-Testing-with-Selenium-WebDriver.git
 
 cd movie-catalog-automated-tests
 
